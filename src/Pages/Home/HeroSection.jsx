@@ -3,15 +3,6 @@ import { faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function HeroSection() {
-    const openPdfInNewTab = () => {
-        const newTab = window.open('src/pdf/ResumePortfolioVer.pdf', '_blank');
-        if (newTab) {
-          newTab.focus();
-        } else {
-          alert('Please allow pop-ups for this site and try again.');
-        }
-      };
-      
     return (
         <section id="heroSection" className="hero--section">
             <div className="hero--section--content--box">
@@ -42,9 +33,9 @@ export default function HeroSection() {
                     </a>
                 </div>
 
-                {/* <a href="src/pdf/ResumePortfolioVer.pdf" target='_blank'> */}
-                    <button className="btn btn-primary" onClick={openPdfInNewTab}>Resume</button>
-                {/* </a> */}
+                <a href="src/pdf/W24Resume5 copy.pdf" target='_blank'>
+                    <button className="btn btn-primary">Resume</button>
+                </a>
             </div>
         </section>
     )
