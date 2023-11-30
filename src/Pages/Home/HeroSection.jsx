@@ -1,7 +1,9 @@
 import {Link} from 'react-router-dom'
 import { faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import resume from '/Users/davidmurgulet/Documents/Projects/react-portfolio/src/pdf/resume.pdf'
+// import resume from '/Users/davidmurgulet/Documents/Projects/react-portfolio/src/pdf/resume.pdf'
+// import resume from '/Users/davidmurgulet/Documents/Projects/react-portfolio/public/pdf/resume.pdf'
+// import resume from 'public/pdf/resume.pdf'
 
 export default function HeroSection() {return (
         <section id="heroSection" className="hero--section">
@@ -33,7 +35,7 @@ export default function HeroSection() {return (
                     </a>
                 </div>
 
-                <a href={resume} target='_blank'>
+                <a href={process.env.PUBLIC_URL + '/pdf/resume.pdf'} target='_blank'>
                     <button className="btn btn-primary">
                         Resume
                         </button>

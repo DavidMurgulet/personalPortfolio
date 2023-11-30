@@ -73,8 +73,8 @@
             "src": "./Screenshot 2023-11-13 at 6.10.23 PM.png",
             "title": "InsightUBC",
             "description": "Full stack website that queries files containing course and room information within UBC. Querying done through a RESTful server.",
-            "linktext": "In progress",
-            "link": "null"
+            "linktext": "View In Github",
+            "link": "https://github.com/DavidMurgulet/InsightUBC"
         },
         {
           "id": "2",
